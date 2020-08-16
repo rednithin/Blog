@@ -57,14 +57,17 @@
         </label>
         <input class="hidden" type="checkbox" name="menu-toggle" id="menu-toggle">
         
-        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+        <div 
+          class="hidden md:flex md:items-center md:w-auto w-full border-t md:border-t-0 pt-4 md:pt-0" 
+          id="menu"
+        >
           <nav>
-            <ul class="md:flex items-center justify-between">
-              <li><a class="pl-4 block" href="/blog">Blog</a></li>
-              <li><a class="pl-4 block" href="/contact">Contact</a></li>
-              <li><a class="pl-4 block" href="/about">About</a></li>
-              <li><a class="pl-4 block" href="/tags">Tags</a></li>
-              <li><a class="pl-4 block" href="/resume">Resume</a></li>
+            <ul class="md:flex items-center justify-between md:text-left">
+              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/blog">Blog</a></li>
+              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/contact">Contact</a></li>
+              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/about">About</a></li>
+              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/tags">Tags</a></li>
+              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/resume">Resume</a></li>
             </ul>
           </nav>
           <a href="/">
@@ -100,6 +103,5 @@
     </footer>
   {% endblock footer %}
 
-  <script src="https://cdn.jsdelivr.net/npm/prerender_all@1.1.0/prerender.js" integrity="sha256-24v6xZyfIpefNGAWj+r65XOkqCkF9joivvLRloIyccQ=" crossorigin="anonymous"></script>
 </body>
 </html>

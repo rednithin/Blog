@@ -9,19 +9,6 @@ tags = ["rust", "web"]
 
 This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article.
 <!-- more -->
-
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
-
-
----
-
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
@@ -34,20 +21,9 @@ You will like those projects!
 
 ___
 
----
-
-***
-
-
 ## Typographic replacements
 
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,,  -- ---
+&copy; &amp;
 
 "Smartypants, double quotes" and 'single quotes'
 
@@ -68,6 +44,8 @@ _This is italic text_
 ## Blockquotes
 
 
+> "Blockquotes can also be nested"
+
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
@@ -84,6 +62,7 @@ Unordered
     + Facilisis in pretium nisl aliquet
     - Nulla volutpat aliquam velit
 + Very easy!
+
 
 Ordered
 
@@ -122,9 +101,7 @@ Sample text here...
 Syntax highlighting
 
 ``` js
-var foo = function (bar) {
-  return bar++;
-};
+var foo = function (bar) { return bar++; };
 
 console.log(foo(5));
 ```
@@ -151,9 +128,6 @@ Right aligned columns
 [link text](http://dev.nodeca.com)
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
 
 ## Images
 
@@ -188,17 +162,19 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 
 - 19^th^
 - H~2~O
+- This is some <sup>superscript</sup> text.
 
 
 ### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
 ++Inserted text++
+<ins>Inserted text</ins>
 
 
 ### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
 
 ==Marked text==
-
+<mark>Marked text</mark>
 
 ### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
@@ -221,16 +197,15 @@ Duplicated footnote reference[^second].
 
 Term 1
 
-:   Definition 1
+: Definition 1
 with lazy continuation.
 
-Term 2 with *inline markup*
+Term 2 with *inline markup* ↩︎
 
-:   Definition 2
+: Definition 2
+    { some code, part of Definition 2 }
 
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
+  Third paragraph of definition 2.
 
 _Compact style:_
 
@@ -251,11 +226,6 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 *[HTML]: Hyper Text Markup Language
 
 ### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-*here be dragons*
-:::
-
 
 {{ youtube(id="dQw4w9WgXcQ") }}
 
