@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet"> 
   
   <!-- Theme CSS -->
-  <link rel="stylesheet" href="{{ get_url(path='styles/styles.css?t={{config.build_timestamp}}') }}" />
+  <link rel="stylesheet" href="{{ get_url(path='styles/styles.css', cachebust=false) }}" />
 
   <!-- Icons -->
   <link
