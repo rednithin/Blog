@@ -25,3 +25,5 @@ feed_filename = "rss.xml"
 
 [extra]
 # Put all your custom variables here
+
+author = "P G Nithin Reddy"

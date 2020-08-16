@@ -1,14 +1,18 @@
 +++
-title = "My First Page"
-description = "This is my first blog post"
+title = "Markdown Cheatsheet"
+description = "A handy cheatsheet for markdown"
 template = "page.html"
-date = 2012-10-02
+date = 2020-08-16
 [taxonomies]
-tags = ["rust", "web"]
+tags = ["markdown", "cheatsheet"]
 +++
 
-This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article. This is my first article.
+As I often forgot some of the markdown syntax,
+this cheatsheet will come in handy. This serves another purpose as well,
+to see if I need to modify any of my stylesheets in the future.
+
 <!-- more -->
+
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
