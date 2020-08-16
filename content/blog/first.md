@@ -104,10 +104,34 @@ Sample text here...
 
 Syntax highlighting
 
-``` js
-var foo = function (bar) { return bar++; };
+``` rust
+pub struct Scanner<R: io::BufRead> {
+    reader: R,
+    buffer: Vec<String>,
+}
 
-console.log(foo(5));
+impl<R: io::BufRead> Scanner<R> {
+    pub fn new(reader: R) -> Self {
+        Scanner {
+            reader,
+            buffer: Vec::new(),
+        }
+    }
+    pub fn next<T: str::FromStr>(&mut self) -> T {
+        loop {
+            if let Some(token) = self.buffer.pop() {
+                return token.parse().ok().expect("Token Parsing Failure");
+            }
+            let mut line = String::new();
+            self.reader.read_line(&mut line).expect("Line Read Failure");
+            self.buffer = line
+                .split_ascii_whitespace()
+                .rev()
+                .map(String::from)
+                .collect();
+        }
+    }
+}
 ```
 
 ## Tables
