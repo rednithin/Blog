@@ -6,6 +6,6 @@ date = 2012-10-02
 
 # Hey there! I'm Nithin
 
-I'm a <u>Software Engineer</u> at <u>Instamojo</u>, an eCommerce/Payments platform enabling MSMEs to bring their businesses online in India.
+I'm a [Software Engineer](https://en.wikipedia.org/wiki/Software_engineer) at [Instamojo](https://www.instamojo.com/), an eCommerce/Payments platform enabling MSMEs to bring their businesses online in India.
 
-On this site I mostly post articles related to <u>software development</u> & <u>competitive coding</u>.
+On this site I mostly post articles related to [software development](https://en.wikipedia.org/wiki/Software_development) & [competitive coding](https://en.wikipedia.org/wiki/Competitive_programming).
