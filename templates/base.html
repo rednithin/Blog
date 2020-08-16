@@ -34,6 +34,9 @@
     href="{{get_url(path='images/favicon-16x16.png')}}"
   />
   <link rel="shortcut icon" href="{{ get_url(path='images/favicon.png') }}" />
+  
+  <link rel="manifest" href="{{ get_url(path='images/site.webmanifest') }}" />
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <style>
@@ -96,5 +99,7 @@
       </div>
     </footer>
   {% endblock footer %}
+
+  <script src="https://cdn.jsdelivr.net/npm/prerender_all@1.1.0/prerender.js" integrity="sha256-24v6xZyfIpefNGAWj+r65XOkqCkF9joivvLRloIyccQ=" crossorigin="anonymous"></script>
 </body>
 </html>
