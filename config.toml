@@ -20,5 +20,8 @@ taxonomies = [
 title = "Nithin Reddy"
 description = "Software Developer"
 
+generate_feed = true
+feed_filename = "atom.xml"
+
 [extra]
 # Put all your custom variables here
