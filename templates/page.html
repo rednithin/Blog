@@ -6,7 +6,7 @@
 {% endblock meta %}
 
 {% block content %}
-  <article class="mx-4">
+  <article>
     <h1 class="text-4xl font-bold">
       <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
     </h1>
@@ -20,7 +20,7 @@
         <a href="/tags/{{ tag }}">#{{ tag }}</a>
       {% endfor %}
     </div>
-    <div class="mt-4 markdown-content">
+    <div class="markdown-content">
       {{ page.content | safe }}
     </div>
   </article>

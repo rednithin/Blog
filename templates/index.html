@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="markdown-content mx-4">
+  <div class="markdown-content">
     {{ section.content | safe }}
     <h1 class="mt-10">Recent Posts</h1>
     {% set blog_posts = get_section(path="blog/_index.md") %}
