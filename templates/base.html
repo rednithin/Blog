@@ -72,10 +72,10 @@
               <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/resume">Resume</a></li>
             </ul>
           </nav>
-          <a href="/">
+          <a href="" onclick="toggleTheme()">
             <img 
-              class="m-4 rounded-full w-10 h-10 border-4 border-transparent hover:border-purple-500"
-              src="{{ get_url(path='images/favicon.ico') }}" 
+              class="m-4 rounded-full w-10 h-10 border-4 border-transparent hover:border-teal-500"
+              src="{{ get_url(path='images/android-chrome-192x192.png') }}" 
               alt="rednithin"
             >
           </a>
@@ -107,6 +107,8 @@
       </div>
     </footer>
   {% endblock footer %}
+
+  <script src="{{ get_url(path='js/theme.js') }}"></script>
 
 </body>
 </html>
