@@ -10,6 +10,10 @@
 
   & h1 {
     @apply text-4xl mb-6;
+
+    &:first-child {
+      @apply mt-0;
+    }
   }
 
   & h2 {
@@ -46,7 +50,7 @@
 
   & > ul,
   & > ol {
-    @apply mb-6 ml-12;
+    @apply mb-6 ml-8;
   }
 
   & code {
@@ -106,6 +110,11 @@
   .markdown-content {
     & blockquote {
       @apply text-2xl;
+    }
+
+    & > ul,
+    & > ol {
+      @apply ml-12;
     }
   }
 }

@@ -51,7 +51,7 @@
   {% block header %}
     <header class="bg-yellow-100 dark:bg-gray-900 md:text-lg shadow-md">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <div class="font-bold inline-block text-xl md:text-2xl p-4">
+        <div class="font-bold inline-block text-xl md:text-2xl p-4 hover:text-teal-500">
           <a href="/">\> red.nithin</a>
         </div>
         <label for="menu-toggle" class="cursor-pointer md:hidden m-4">
@@ -65,16 +65,16 @@
         >
           <nav>
             <ul class="md:flex items-center justify-between md:text-left">
-              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/blog">Blog</a></li>
-              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/contact">Contact</a></li>
-              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/about">About</a></li>
-              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/tags">Tags</a></li>
-              <li><a class="pl-4 block pb-2 md:pb-0 underline md:no-underline" href="/resume">Resume</a></li>
+              <li class="block px-4 py-2 md:pb-0 hover:font-semibold hover:text-teal-500"><a class="underline md:no-underline" href="/blog">Blog</a></li>
+              <li class="block px-4 py-2 md:pb-0 hover:font-semibold hover:text-teal-500"><a class="underline md:no-underline" href="/contact">Contact</a></li>
+              <li class="block px-4 py-2 md:pb-0 hover:font-semibold hover:text-teal-500"><a class="underline md:no-underline" href="/about">About</a></li>
+              <li class="block px-4 py-2 md:pb-0 hover:font-semibold hover:text-teal-500"><a class="underline md:no-underline" href="/tags">Tags</a></li>
+              <li class="block px-4 py-2 md:pb-0 hover:font-semibold hover:text-teal-500"><a class="underline md:no-underline" href="/resume">Resume</a></li>
             </ul>
           </nav>
           <a href="" onclick="toggleTheme()">
             <img 
-              class="m-4 rounded-full w-10 h-10 border-4 border-transparent hover:border-teal-500"
+              class="m-4 rounded-full w-10 h-10 border-2 border-transparent hover:border-teal-500"
               src="{{ get_url(path='images/android-chrome-192x192.png') }}" 
               alt="rednithin"
             >
@@ -84,7 +84,7 @@
     </header>
   {% endblock header %}
 
-  <section class="container mx-auto my-20 px-4 md:px-16 lg:px-40 mb:auto md:text-lg">
+  <section class="container mx-auto my-16 px-4 md:px-16 lg:px-40 mb:auto md:text-lg">
     {% block content %}
       <div class="text-center text-5xl">
         Please override the content block
@@ -95,11 +95,11 @@
   {% block footer %}
     <footer class="bg-yellow-100 dark:bg-gray-900 md:text-lg border-t-2 border-yellow-400">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <div class="font-bold inline-block text-xl md:text-2xl p-6">
+        <div class="font-bold inline-block text-xl md:text-2xl p-6 hover:text-teal-500">
           <a href="/">\> red.nithin</a>
         </div>
         <a href="/rss.xml">
-          <i class="fas fa-rss"></i>
+          <i class="fas fa-rss hover:text-teal-500"></i>
         </a>
         <p class="text-sm text-gray-500 pr-4">
           © 2020 Nithin Reddy

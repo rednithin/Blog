@@ -22,7 +22,7 @@
       - {{ page.reading_time }} min read
       [<i>{{ page.word_count }} words</i>]
     </div>
-   <div class="mt-1 mb-2 text-gray-600 dark:text-teal-400"> 
+   <div class="mt-1 mb-4 text-gray-600 dark:text-teal-400"> 
       {% for tag in page.taxonomies.tags %}
         <a class="hover:text-gray-900 dark:hover:text-teal-500" href="/tags/{{ tag }}">#{{ tag }}</a>
       {% endfor %}
@@ -30,7 +30,7 @@
     <div class="markdown-content">
       {{ page.summary | safe }}
     </div>
-    <a href="{{ page.permalink | safe }}" class="block my-6 font-bold">
+    <a href="{{ page.permalink | safe }}" class="block my-6 font-bold hover:text-teal-500">
       Read More&nbsp;
       <i class="fas fa-long-arrow-alt-right"></i>
     </a>
