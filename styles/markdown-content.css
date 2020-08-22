@@ -29,7 +29,7 @@
   }
 
   & blockquote {
-    @apply my-4 ml-3 pl-4 py-2 border-gray-800 border-l-2 italic font-serif text-xl;
+    @apply my-4 ml-4 pl-5 py-3 border-gray-800 border-l-2 italic font-serif text-gray-800 text-2xl;
 
     & p {
       @apply mb-0;
