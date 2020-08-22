@@ -29,7 +29,7 @@
   }
 
   & blockquote {
-    @apply my-4 ml-4 pl-5 py-3 border-gray-800 border-l-2 italic font-serif text-gray-800 text-2xl;
+    @apply my-4 ml-4 pl-5 py-3 border-gray-800 border-l-2 italic font-serif text-gray-800 text-xl;
 
     & p {
       @apply mb-0;
@@ -94,6 +94,14 @@
 
     &:hover {
       @apply text-gray-900;
+    }
+  }
+}
+
+@screen md {
+  .markdown-content {
+    & blockquote {
+      @apply text-2xl;
     }
   }
 }
