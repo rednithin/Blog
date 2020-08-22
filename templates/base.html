@@ -48,7 +48,7 @@
 </head>
 <body class="flex flex-col h-screen justify-between">
   {% block header %}
-    <header class="bg-yellow-100 text-lg shadow-md">
+    <header class="bg-yellow-100 md:text-lg shadow-md">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <div class="font-bold inline-block text-xl md:text-2xl p-4">
           <a href="/">\> red.nithin</a>
@@ -83,7 +83,7 @@
     </header>
   {% endblock header %}
 
-  <section class="container mx-auto my-20 px-4 md:px-16 mb:auto text-lg">
+  <section class="container mx-auto my-20 md:px-16 mb:auto md:text-lg">
     {% block content %}
       <div class="text-center text-5xl">
         Please override the content block
@@ -92,7 +92,7 @@
   </section>
 
   {% block footer %}
-    <footer class="bg-yellow-100 text-lg border-t-2 border-yellow-400">
+    <footer class="bg-yellow-100 md:text-lg border-t-2 border-yellow-400">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <div class="font-bold inline-block text-xl md:text-2xl p-6">
           <a href="/">\> red.nithin</a>
