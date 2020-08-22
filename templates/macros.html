@@ -22,7 +22,7 @@
       - {{ page.reading_time }} min read
       [<i>{{ page.word_count }} words</i>]
     </div>
-    <div class="mt-1 text-gray-600">
+   <div class="mt-1 mb-2 text-gray-600"> 
       {% for tag in page.taxonomies.tags %}
         <a href="/tags/{{ tag }}">#{{ tag }}</a>
       {% endfor %}
