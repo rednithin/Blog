@@ -3,7 +3,6 @@ function setPreferredColorScheme(mode) {
   for (var i = stylesheet.rules.length-1; i >= 0; i--) {
     rule = stylesheet.rules[i].media;
     if (rule && rule.mediaText && rule.mediaText.includes("prefers-color-scheme")) {    
-      console.log(rule);    
       switch (mode) {
       case "light":
         rule.appendMedium("original-prefers-color-scheme");
@@ -28,14 +27,19 @@ function setPreferredColorScheme(mode) {
 setPreferredColorScheme("light");
 if (localStorage.getItem("theme") === 'dark') {
   setPreferredColorScheme("dark");
+  console.log("🌑 Dark Theme Enabled");
+} else {
+  console.log("🌙 Light Theme Enabled");
 }
 
 function toggleTheme() {
   if (localStorage.getItem("theme") === "dark") {
     setPreferredColorScheme("light");
     localStorage.setItem("theme", "light");
+    console.log("🌙 Light Theme Enabled");
   } else {
     setPreferredColorScheme("dark");
     localStorage.setItem("theme", "dark");
+    console.log("🌑 Dark Theme Enabled");
   }
 }
