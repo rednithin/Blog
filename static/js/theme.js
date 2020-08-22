@@ -24,22 +24,31 @@ function setPreferredColorScheme(mode) {
   }
 }
 
-setPreferredColorScheme("light");
-if (localStorage.getItem("theme") === 'dark') {
+
+function setDarkTheme() {
   setPreferredColorScheme("dark");
+  localStorage.setItem("theme", "dark");
   console.log("🌑 Dark Theme Enabled");
-} else {
+}
+
+function setLightTheme() {
+  setPreferredColorScheme("light");
+  localStorage.setItem("theme", "light");
   console.log("🌙 Light Theme Enabled");
+}
+
+var theme = localStorage.getItem("theme");
+
+if (!theme || theme == 'dark') {
+  setDarkTheme();
+} else {
+  setLightTheme();
 }
 
 function toggleTheme() {
   if (localStorage.getItem("theme") === "dark") {
-    setPreferredColorScheme("light");
-    localStorage.setItem("theme", "light");
-    console.log("🌙 Light Theme Enabled");
+    setLightTheme();
   } else {
-    setPreferredColorScheme("dark");
-    localStorage.setItem("theme", "dark");
-    console.log("🌑 Dark Theme Enabled");
+    setDarkTheme();
   }
 }
