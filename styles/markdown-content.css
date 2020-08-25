@@ -5,11 +5,11 @@
   & h4,
   & h5,
   & h6 {
-    @apply text-xl font-bold mb-4 mt-8;
+    @apply text-lg font-bold mb-4 mt-8;
   }
 
   & h1 {
-    @apply text-4xl mb-6;
+    @apply text-3xl mb-6;
 
     &:first-child {
       @apply mt-0;
@@ -17,11 +17,11 @@
   }
 
   & h2 {
-    @apply text-3xl mb-4;
+    @apply text-2xl mb-4;
   }
 
   & h3 {
-    @apply text-2xl;
+    @apply text-xl;
   }
 
   & hr {
@@ -108,6 +108,27 @@
 
 @screen md {
   .markdown-content {
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+      @apply text-xl;
+    }
+
+    & h1 {
+      @apply text-4xl;
+    }
+
+    & h2 {
+      @apply text-3xl;
+    }
+
+    & h3 {
+      @apply text-2xl;
+    }
+
     & blockquote {
       @apply text-2xl;
     }
