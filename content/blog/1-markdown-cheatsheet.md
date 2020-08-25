@@ -13,7 +13,7 @@ to see if I need to modify any of my stylesheets in the future.
 
 <!-- more -->
 
-# h1 Heading 8-)
+# h1 Heading
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
@@ -21,15 +21,13 @@ to see if I need to modify any of my stylesheets in the future.
 ###### h6 Heading
 
 
-## Horizontal Rules
+## Horizontal Ruler
 
-___
+---
 
 ## Typographic replacements
 
 &copy; &amp;
-
-"Smartypants, double quotes" and 'single quotes'
 
 
 ## Emphasis
@@ -57,7 +55,7 @@ _This is italic text_
 
 ## Lists
 
-Unordered
+### Unordered
 
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
@@ -68,7 +66,7 @@ Unordered
 + Very easy!
 
 
-Ordered
+### Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
@@ -173,44 +171,26 @@ With a reference later in the document defining the URL location:
 
 ## Plugins
 
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+### Subscript/ Superscript
 
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
-- 19^th^
-- H~2~O
 - This is some <sup>superscript</sup> text.
+- This is some <sub>subscript</sub> text.
 
 
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+### Inserted Text
 
-++Inserted text++
 <ins>Inserted text</ins>
 
 
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+### Marked Text
 
-==Marked text==
 <mark>Marked text</mark>
 
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+### Footnotes
 
 Footnote 1 link[^first].
 
 Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
 
 Duplicated footnote reference[^second].
 
@@ -220,40 +200,7 @@ Duplicated footnote reference[^second].
 
 [^second]: Footnote text.
 
+### Custom containers
 
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-: Definition 1
-with lazy continuation.
-
-Term 2 with *inline markup* ↩︎
-
-: Definition 2
-    { some code, part of Definition 2 }
-
-  Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-{{ youtube(id="dQw4w9WgXcQ") }}
+{{ youtube(id="6Nb-prB-4P0") }}
 
