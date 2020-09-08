@@ -25,20 +25,22 @@
     </div>
   </article>
 
-  <hr class="mt-24 mb-8">
+  <hr class="mt-24">
 
-  <div class="text-center mt-16">
-    {% if page.later %}
-      <a  href="{{ page.later.permalink | safe }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded inline-flex items-center">
-        <i class="fas fa-arrow-left"></i>
-        <span class="pl-2">{{ page.later.title }}</span>
-      </a>
-    {% endif %}
-    {% if page.earlier %}
-      <a  href="{{ page.earlier.permalink | safe }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded inline-flex items-center">
-        <span class="pr-2">{{ page.earlier.title }}</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    {% endif %}
-  </div>
+  {% if page.later or page.earlier %}
+    <div class="text-center mt-24">
+      {% if page.later %}
+        <a  href="{{ page.later.permalink | safe }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded inline-flex items-center">
+          <i class="fas fa-arrow-left"></i>
+          <span class="pl-2">{{ page.later.title }}</span>
+        </a>
+      {% endif %}
+      {% if page.earlier %}
+        <a  href="{{ page.earlier.permalink | safe }}" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-4 rounded inline-flex items-center">
+          <span class="pr-2">{{ page.earlier.title }}</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
 {% endblock content%}
