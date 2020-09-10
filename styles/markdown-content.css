@@ -58,7 +58,7 @@
   }
 
   & pre {
-    @apply border-2 border-gray-400 p-4 bg-gray-300 rounded-lg mb-6 overflow-auto;
+    @apply border-2 border-gray-400 p-4 bg-gray-300 rounded-lg mb-6 mt-4 overflow-auto;
   }
 
   & :not(pre) > code {
