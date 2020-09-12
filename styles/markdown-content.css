@@ -54,7 +54,7 @@
   }
 
   & code {
-    @apply font-mono;
+    @apply font-mono not-italic text-base;
   }
 
   & pre {
@@ -131,6 +131,10 @@
 
     & blockquote {
       @apply text-2xl;
+    }
+
+    & code {
+      @apply text-lg;
     }
 
     & > ul,
