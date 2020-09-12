@@ -4,7 +4,7 @@
 {% block content %}
   <ul>
     {% for page in paginator.pages %}
-        <li class="mb-16 last:mb-0">
+        <li class="mb-8 last:mb-0">
           {{ macro::page_summary(page=page) }}
         </li>
     {% endfor %}
