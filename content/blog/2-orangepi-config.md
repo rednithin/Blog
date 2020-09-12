@@ -24,6 +24,7 @@ Just a list of things that I must do after a fresh install of Armbian on my Oran
 - [Zerotier](#zerotier)
   - [Installation](#installation-2)
   - [Joining](#joining)
+  - [Enabling Daemon](#enabling-daemon)
 - [Rossa](#rossa)
 
 
@@ -51,13 +52,13 @@ Or by using `dpkg` with `.deb` release in their Github releases page.
 
 ## Installation
 
-```
+```bash
 sudo apt-get install zsh
 ```
 
 ## Change shell for user
 
-```
+```bash
 chsh -s /bin/zsh
 ```
 
@@ -131,7 +132,7 @@ hosts allow = 192.168.0. <another-ip-1> <another-ip-2> localhost
 
 Then run the following command to restart the service
 
-```
+```bash
 sudo systemctl restart smbd.service
 ```
 
@@ -141,7 +142,7 @@ Before we proceed with the installation [Rust](https://rustup.rs/) must be insta
 
 ## Installation
 
-```
+```bash
 sudo apt-get install pkg-config
 cargo install starship
 ```
@@ -163,11 +164,16 @@ curl -s https://install.zerotier.com | sudo bash
 
 ```bash
 sudo zerotier-cli join <network-id-here>
-sudo systemctl enable zerotier-one
-sudo systemctl start zerotier-one
 ```
 
 > Replace `<network-id-here>` with the actual network ID. 
+
+## Enabling Daemon
+
+```bash
+sudo systemctl enable zerotier-one
+sudo systemctl start zerotier-one
+```
 
 # Rossa
 
