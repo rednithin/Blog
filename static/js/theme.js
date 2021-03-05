@@ -52,3 +52,7 @@ function toggleTheme() {
     setDarkTheme();
   }
 }
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
