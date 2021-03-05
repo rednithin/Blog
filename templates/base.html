@@ -10,13 +10,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes"
   />
   <meta name="robots" content="noodp" />
-  
-  <!-- Font CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet"> 
   
   <!-- Theme CSS -->
   <link rel="stylesheet" href="{{ get_url(path='styles/styles.css', cachebust=false) }}" />
@@ -37,8 +33,6 @@
   <link rel="shortcut icon" href="{{ get_url(path='images/favicon.png') }}" />
   
   <link rel="manifest" href="{{ get_url(path='images/site.webmanifest') }}" />
-
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <style>
     #menu-toggle:checked + #menu {
@@ -98,16 +92,16 @@
           <a href="/">\> red.nithin</a>
         </div>
         <div class="text-xl">
-          <a class="mr-3" target="_blank" href="/rss.xml">
+          <a class="mr-3" target="_blank" href="/rss.xml" aria-label="RSS Feed">
             <i class="fas fa-rss hover:text-teal-500"></i>
           </a>
-          <a class="mr-3" target="_blank" href="mailto:reddy.nithinpg@gmail.com">
+          <a class="mr-3" target="_blank" href="mailto:reddy.nithinpg@gmail.com" aria-label="Mail To">
             <i class="fas fa-envelope hover:text-teal-500"></i>
           </a>
-          <a class="mr-3" target="_blank" rel="noopener noreferrer" href="https://github.com/rednithin">
+          <a class="mr-3" target="_blank" rel="noopener noreferrer" href="https://github.com/rednithin" aria-label="Github">
             <i class="fab fa-github hover:text-teal-500"></i>
           </a>
-          <a class="mr-3" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rednithin/">
+          <a class="mr-3" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rednithin/" aria-label="Linkedin">
             <i class="fab fa-linkedin hover:text-teal-500"></i>
           </a>
         </div>
@@ -117,6 +111,11 @@
       </div>
     </footer>
   {% endblock footer %}
+
+  <!-- Font CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <script src="{{ get_url(path='js/theme.js') }}"></script>
 
