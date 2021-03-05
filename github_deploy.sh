@@ -9,6 +9,7 @@ rm -rf *
 cd ..
 yarn run build
 zola build
+node workbox-build.js
 cd public
 mv /tmp/git .git
 git add -A
