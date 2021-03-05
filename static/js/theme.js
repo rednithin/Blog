@@ -1,5 +1,5 @@
 function setPreferredColorScheme(mode) {
-  stylesheet = document.styleSheets.find(x => x.href.indexOf('styles.css') >= 0);
+  stylesheet = Object.values(document.styleSheets).find(x => x.href.indexOf('styles.css') >= 0);
   for (var i = stylesheet.rules.length-1; i >= 0; i--) {
     rule = stylesheet.rules[i].media;
     if (rule && rule.mediaText && rule.mediaText.includes("prefers-color-scheme")) {    
