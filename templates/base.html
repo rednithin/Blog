@@ -115,13 +115,11 @@
   {% endblock footer %}
 
   <!-- Font CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="{{ get_url(path='styles/font.css', cachebust=false) }}" />
 
-  <script src="{{ get_url(path='js/theme.js') }}"></script>
+  <script src="{{ get_url(path='js/theme.js') }}" defer></script>
 
-  <script src="https://unpkg.com/quicklink@2.0.0/dist/quicklink.umd.js"></script>
   <script>
     window.addEventListener('load', () =>{
       quicklink.listen();
