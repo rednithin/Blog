@@ -24,10 +24,27 @@ const buildSW = () => {
 
         // Only cache 10 images.
         expiration: {
-          maxEntries: 10,
+          maxEntries: 20,
         },
       },
-    }],
+    },{
+      urlPattern: /\.(?:woff|woff2|ttf|eot)$/,
+
+      // Apply a cache-first strategy.
+      handler: 'CacheFirst',
+
+      options: {
+        // Use a custom cache name.
+        cacheName: 'fonts',
+
+        // Only cache 10 images.
+        expiration: {
+          maxEntries: 20,
+          maxAgeSeconds: 7* 24 * 60 * 60
+        },
+      },
+    }
+  ],
   });
 };
 
