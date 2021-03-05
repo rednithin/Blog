@@ -1,6 +1,7 @@
 /* inter-regular - latin using https://google-webfonts-helper.herokuapp.com/fonts/fira-code?subsets=latin */
 @font-face {
   font-family: 'Inter';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/inter-v3-latin/inter-v3-latin-regular.eot');
@@ -16,6 +17,7 @@
 /* inter-500 - latin */
 @font-face {
   font-family: 'Inter';
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   src: url('/fonts/inter-v3-latin/inter-v3-latin-500.eot');
@@ -31,6 +33,7 @@
 /* inter-600 - latin */
 @font-face {
   font-family: 'Inter';
+  font-display: swap;
   font-style: normal;
   font-weight: 600;
   src: url('/fonts/inter-v3-latin/inter-v3-latin-600.eot');
@@ -46,6 +49,7 @@
 /* inter-800 - latin */
 @font-face {
   font-family: 'Inter';
+  font-display: swap;
   font-style: normal;
   font-weight: 800;
   src: url('/fonts/inter-v3-latin/inter-v3-latin-800.eot');
@@ -61,6 +65,7 @@
 /* fira-code-500 - latin */
 @font-face {
   font-family: 'Fira Code';
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   src: url('/fonts/fira-code-v10-latin/fira-code-v10-latin-500.eot');
@@ -76,6 +81,7 @@
 /* fira-code-regular - latin */
 @font-face {
   font-family: 'Fira Code';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/fira-code-v10-latin/fira-code-v10-latin-regular.eot');
@@ -91,6 +97,7 @@
 /* fira-code-600 - latin */
 @font-face {
   font-family: 'Fira Code';
+  font-display: swap;
   font-style: normal;
   font-weight: 600;
   src: url('/fonts/fira-code-v10-latin/fira-code-v10-latin-600.eot');
