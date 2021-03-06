@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./templates/**/*.html", "./theme/**/*.html"],
+  purge: ["./templates/**/*.html", "./content/**/*.md"],
   target: 'relaxed',
   prefix: '',
   important: false,
