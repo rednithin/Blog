@@ -14,12 +14,15 @@ Currently I'm learning the **Rust programming language** on how it could be used
 
 ## Education
 
+<div class="overflow-x-auto">
+
 |Insitute                      |  Course                                    | CGPA/Percentage     |
 |------------------------------|--------------------------------------------|---------------------|
 | PES South Campus             | B.E in Information Sciences & Engineering  | 8.7                 |
 | Sri Kumaran Children's Home  | CBSE - 12th                                | 88.8 %              |
 | St. Peter's School           | ICSE - 10th                                | 93.5 %              |
 
+</div>
 
 ## Experience
 
