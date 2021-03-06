@@ -202,5 +202,5 @@ Duplicated footnote reference[^second].
 
 ### Custom containers
 
-{{ youtube(id="6Nb-prB-4P0") }}
+{{ youtube(id="6Nb-prB-4P0",title="youtube") }}
 
