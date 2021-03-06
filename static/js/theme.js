@@ -28,22 +28,16 @@ function setPreferredColorScheme(mode) {
 function setDarkTheme() {
   setPreferredColorScheme("dark");
   localStorage.setItem("theme", "dark");
-  document.querySelector('meta[name=theme-color]').remove();
-  var meta = document.createElement('meta');
-  meta.name = "theme-color";
+  let meta = document.querySelector('meta[name=theme-color]');
   meta.content = "#1a202c";
-  document.head.append(meta);
   console.log("🌑 Dark Theme Enabled");
 }
 
 function setLightTheme() {
   setPreferredColorScheme("light");
   localStorage.setItem("theme", "light");
-  document.querySelector('meta[name=theme-color]').remove();
-  var meta = document.createElement('meta');
-  meta.name = "theme-color";
+  let meta = document.querySelector('meta[name=theme-color]');
   meta.content = "#fffff0";
-  document.head.append(meta);
   console.log("🌙 Light Theme Enabled");
 }
 
