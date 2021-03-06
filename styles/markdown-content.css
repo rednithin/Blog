@@ -54,7 +54,7 @@
   }
 
   & code {
-    @apply font-mono not-italic text-base;
+    @apply font-mono not-italic text-base text-gray-400;
   }
 
   & pre {
@@ -62,7 +62,7 @@
   }
 
   & :not(pre) > code {
-    @apply bg-gray-300 px-1 rounded;
+    @apply bg-gray-300 px-1 rounded text-gray-800;
   }
 
   & table {
@@ -128,10 +128,6 @@
 
     & pre {
       @apply border-purple-600;
-    }
-
-    & code {
-      @apply text-gray-800;
     }
 
     & table {
