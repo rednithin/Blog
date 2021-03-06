@@ -16,9 +16,9 @@ Currently I'm learning the **Rust programming language** on how it could be used
 
 <div class="overflow-x-auto">
 
-|Insitute                      |  Course                                    | CGPA/Percentage     |
+|Insitute                      |  Course                                    | Score               |
 |------------------------------|--------------------------------------------|---------------------|
-| PES South Campus             | B.E in Information Sciences & Engineering  | 8.7                 |
+| PES South Campus             | B.E in Information Sciences & Engineering  | 8.7 CGPA            |
 | Sri Kumaran Children's Home  | CBSE - 12th                                | 88.8 %              |
 | St. Peter's School           | ICSE - 10th                                | 93.5 %              |
 
