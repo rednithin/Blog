@@ -133,7 +133,7 @@
     & table {
       & tbody tr {
         &:nth-child(even) {
-          @apply bg-gray-600;
+          @apply bg-gray-700 text-gray-100;
         }
       }
     }
