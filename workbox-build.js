@@ -15,7 +15,7 @@ const buildSW = () => {
       // Match any request that ends with .png, .jpg, .jpeg or .svg.
       urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
 
-      // Apply a cache-first strategy.
+      // Apply a stale-while-revalidate strategy.
       handler: 'StaleWhileRevalidate',
 
       options: {
@@ -37,7 +37,7 @@ const buildSW = () => {
         // Use a custom cache name.
         cacheName: 'fonts',
 
-        // Only cache 10 images.
+        // Only cache 20 fonts.
         expiration: {
           maxEntries: 20,
           maxAgeSeconds: 7* 24 * 60 * 60
