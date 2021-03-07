@@ -7,8 +7,8 @@ date = 2020-08-16
 tags = ["markdown", "cheatsheet"]
 +++
 
-As I often forgot some of the markdown syntax,
-this cheatsheet will come in handy. This serves another purpose as well,
+As I often forget some of the markdown syntax,
+this cheat sheet will come in handy. This serves another purpose as well,
 to see if I need to modify any of my stylesheets in the future.
 
 <!-- more -->
